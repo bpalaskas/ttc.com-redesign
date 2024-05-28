@@ -1,0 +1,27 @@
+name: deploy-on-merge
+on:
+  pull_request:
+    types:
+      - closed
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.merged == true
+    steps:
+      - name: Print message
+        run: |
+          echo The PR was merged
+
+      - name: SSH Setup
+        run: |
+          mkdir -p ~/.ssh/
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          echo -e "Host bluehost\n\tHostName 162.241.218.79\n\tUser thethjo8\n\tIdentityFile ~/.ssh/id_rsa\n\tPort 22" > ~/.ssh/config
+          git config --global core.askpass /usr/bin/ssh-askpass
+          ssh-keyscan -t rsa -p 22 162.241.218.79 >> ~/.ssh/known_hosts
+
+      - name: Deploy to Bluehost
+        run: |
+          ssh -o "StrictHostKeyChecking=no" bluehost 'cd /home1/thethjo8/public_html && git pull origin main'
