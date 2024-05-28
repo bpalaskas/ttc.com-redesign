@@ -1,151 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Online marketing and web design solutions">
-  <meta name="keywords" content="online, marketing, online marketing, web, web design, solutions">
-  <meta name="author" content="Sarif Design">
-  <script src="js/main.js" defer></script>
-  <title>EXANOR | Online Marketing Agency</title>
-  <link rel="shortcut icon" type="image/jpg" href="img/favicon.png"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css" integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <script src="js/smoothscrollpolyfills.min.js"></script>
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Online marketing and web design solutions"
+    />
+    <meta
+      name="keywords"
+      content="online, marketing, online marketing, web, web design, solutions"
+    />
+    <meta name="author" content="Sarif Design" />
+    <script src="js/main.js" defer></script>
+    <title>EXANOR | Online Marketing Agency</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+      integrity="sha512-vebUliqxrVkBy3gucMhClmyQP9On/HAWQdKDXRaAlb/FKuTbxkjPKUyqVOxAcGwFDka79eTF+YXwfke1h3/wfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="js/smoothscrollpolyfills.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="header">
+      <a href="#" class="logo">
+        <div class="logo-container">
+          <img src="img/logo.png" alt="Exanor logo" />
+        </div>
+      </a>
+      <ul>
+        <li><a href="index.html#home" onclick="toggle()">Home</a></li>
+        <li><a href="index.html#about" onclick="toggle()">About</a></li>
+        <li><a href="index.html#services" onclick="toggle()">Services</a></li>
+        <li><a href="index.html#portfolio" onclick="toggle()">Portfolio</a></li>
+        <li><a href="index.html#team" onclick="toggle()">Team</a></li>
+        <li><a href="index.html#contact" onclick="toggle()">Contact</a></li>
+      </ul>
+      <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <!-- Header END -->
+    <!-- test -->
+    <!-- Banner -->
+    <section class="banner banner-2" id="home">
+      <h2>Privacy <span>Policy</span></h2>
+    </section>
+    <!-- Banner END -->
 
-<!-- Header -->
-<header id="header">
-  <a href="#" class="logo">
-    <div class="logo-container">
-      <img src="img/logo.png" alt="Exanor logo" />
-    </div>
-  </a>
-  <ul>
-    <li><a href="index.html#home" onclick="toggle()">Home</a></li>
-    <li><a href="index.html#about" onclick="toggle()">About</a></li>
-    <li><a href="index.html#services" onclick="toggle()">Services</a></li>
-    <li><a href="index.html#portfolio" onclick="toggle()">Portfolio</a></li>
-    <li><a href="index.html#team" onclick="toggle()">Team</a></li>
-    <li><a href="index.html#contact" onclick="toggle()">Contact</a></li>
-  </ul>
-  <div class="toggle" onclick="toggle()"></div>
-</header>
-<!-- Header END -->
+    <!-- scrollUp Btn -->
+    <button class="" id="btnScrollTop" aria-label="scroll to the top">
+      <i class="las la-chevron-up"></i>
+    </button>
+    <!-- scrollUp Btn END -->
 
-<!-- Banner -->
-<section class="banner banner-2" id="home">
-  <h2>Privacy <span>Policy</span></h2>
-</section>
-<!-- Banner END -->
-
-<!-- scrollUp Btn -->
-<button class="" id="btnScrollTop" aria-label="scroll to the top">
-  <i class="las la-chevron-up"></i>
-</button>
-<!-- scrollUp Btn END -->
-
-<!-- cookie popup -->
-<div class="cookie-container">
-    <p>We use cookies on this website to give you the best
-      experience and show you relevant ads.<br />
-      By clicking "I Accept" button, we will assume you accept those cookies. <br />
-      To find out more, please read our<br /> <a href="privacy.html">Privacy Policy</a> and
-      <a href="terms.html">Terms of Service</a>.
-    </p>
-  <button class="cookie-button">I Accept</button>
-</div>
-<!-- cookie popup END -->
-
-<!-- Privacy Policy -->
-<section class="privacy">
-  <div class="terms__container">
-    <div class="terms__box">
+    <!-- cookie popup -->
+    <div class="cookie-container">
       <p>
-        This privacy policy relates to Exanor, the website https://exanor.com and all sub-pages of this site. It governs the privacy of those who choose to use it.
-        This privacy policy contains information relating to various areas of privacy and outlines the requirements of users, the website owner, the website and Exanor. It also details how this website collects, processes and stores user data and information as well as how this information and data are protected.<br /><br />
+        We use cookies on this website to give you the best experience and show
+        you relevant ads.<br />
+        By clicking "I Accept" button, we will assume you accept those cookies.
+        <br />
+        To find out more, please read our<br />
+        <a href="privacy.html">Privacy Policy</a> and
+        <a href="terms.html">Terms of Service</a>.
       </p>
+      <button class="cookie-button">I Accept</button>
     </div>
-    <div class="terms__box">
-      <h3>The Website</h3>
-      <p>
-        This website and its owners take all possible steps to ensure the privacy of users and informational relating to users. This website complies with all local and national laws relating to privacy.<br /><br />
-      </p>
-    </div>
-    <div class="terms__box">
-      <h3>Use of Cookies</h3>
-      <p>
-        This website uses cookies to better the experience of visiting. This website also uses tracking software to monitor how visitors utilize and navigate the website. This software and all cookies do not contain personal information other than what is provided through the browser. The software saves a cookie to computers that visit the site but will not store, save or collect personal information.<br /><br />
-        This website has enabled Google Analytics Advertising features that may include:<br /><br />
-        - Remarketing with Google Analytics<br />
-        - Google Display Network Impression Reporting<br />
-        - Google Analytics Demographics and Interest Reporting<br />
-        - Integrated services that require Google Analytics to collect data via advertising cookies and anonymous identifiers<br /><br />
-        This website and all third-party vendors will only use first-party cookies (such as the Google Analytics cookie), other first-party identifiers, and third-party cookies (such as Google advertising cookies) or other third-party identifiers together for the purposes of improving the website and its advertising efforts. No personal information will be sold or distributed to any other parties and no personally identifiable information will be used to contact visitors even if possible. No personally identifiable information obtained from cookies will be used in public marketing campaigns.<br /><br />
-        This website will not facilitate the merging of personally-identifiable information with non-personally identifiable information collected through any Google advertising product or feature unless you have robust notice of, and the user’s prior affirmative (i.e., opt-in) consent to, that merger.<br /><br />
-        This website may utilize interest-based advertising, including Remarketing, with Google Analytics in connection with other Google services. If doing so, this site always follows the policies applicable to those Google services.<br /><br />
-        Any sensitive information collected by Google Analytics about visitors will not be used for the purpose of interest-based advertising.<br /><br />
-      </p>
-    </div>
-    <div class="terms__box">
-      <h3>Contact</h3>
-      <p>
-        All efforts to ensure safe and secure communication have been taken. This website may use any information submitted to the site by contacting the website. This information could be used to contact visitors in the future with information relating to the initial request or reason for contact. No personal information will be sold or distributed to other companies without explicit permission of the user.
-      </p>
-    </div>
-    <div class="terms__box">
-      <h3>External Links</h3>
-      <p>
-        Periodically, this website will provide links to external websites. This website does not control the content, terms or use or privacy policy of any external websites in any way. Users are advised to read the terms of use and privacy policy of any external websites. The owners of this website cannot guarantee or verify the contents of any externally linked website despite their best efforts.<br /><br />
-      </p>
-    </div>
-  </div>
-</section>
-<!-- Privacy Policy END -->
+    <!-- cookie popup END -->
 
-<!-- Footer -->
-<footer>
-  <div class="footer__container">
-    <div class="visible-on-mobile">
-      <div class="visible-on-mobile-container">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
+    <!-- Privacy Policy -->
+    <section class="privacy">
+      <div class="terms__container">
+        <div class="terms__box">
+          <p>
+            This privacy policy relates to Exanor, the website
+            https://exanor.com and all sub-pages of this site. It governs the
+            privacy of those who choose to use it. This privacy policy contains
+            information relating to various areas of privacy and outlines the
+            requirements of users, the website owner, the website and Exanor. It
+            also details how this website collects, processes and stores user
+            data and information as well as how this information and data are
+            protected.<br /><br />
+          </p>
+        </div>
+        <div class="terms__box">
+          <h3>The Website</h3>
+          <p>
+            This website and its owners take all possible steps to ensure the
+            privacy of users and informational relating to users. This website
+            complies with all local and national laws relating to privacy.<br /><br />
+          </p>
+        </div>
+        <div class="terms__box">
+          <h3>Use of Cookies</h3>
+          <p>
+            This website uses cookies to better the experience of visiting. This
+            website also uses tracking software to monitor how visitors utilize
+            and navigate the website. This software and all cookies do not
+            contain personal information other than what is provided through the
+            browser. The software saves a cookie to computers that visit the
+            site but will not store, save or collect personal information.<br /><br />
+            This website has enabled Google Analytics Advertising features that
+            may include:<br /><br />
+            - Remarketing with Google Analytics<br />
+            - Google Display Network Impression Reporting<br />
+            - Google Analytics Demographics and Interest Reporting<br />
+            - Integrated services that require Google Analytics to collect data
+            via advertising cookies and anonymous identifiers<br /><br />
+            This website and all third-party vendors will only use first-party
+            cookies (such as the Google Analytics cookie), other first-party
+            identifiers, and third-party cookies (such as Google advertising
+            cookies) or other third-party identifiers together for the purposes
+            of improving the website and its advertising efforts. No personal
+            information will be sold or distributed to any other parties and no
+            personally identifiable information will be used to contact visitors
+            even if possible. No personally identifiable information obtained
+            from cookies will be used in public marketing campaigns.<br /><br />
+            This website will not facilitate the merging of
+            personally-identifiable information with non-personally identifiable
+            information collected through any Google advertising product or
+            feature unless you have robust notice of, and the user’s prior
+            affirmative (i.e., opt-in) consent to, that merger.<br /><br />
+            This website may utilize interest-based advertising, including
+            Remarketing, with Google Analytics in connection with other Google
+            services. If doing so, this site always follows the policies
+            applicable to those Google services.<br /><br />
+            Any sensitive information collected by Google Analytics about
+            visitors will not be used for the purpose of interest-based
+            advertising.<br /><br />
+          </p>
+        </div>
+        <div class="terms__box">
+          <h3>Contact</h3>
+          <p>
+            All efforts to ensure safe and secure communication have been taken.
+            This website may use any information submitted to the site by
+            contacting the website. This information could be used to contact
+            visitors in the future with information relating to the initial
+            request or reason for contact. No personal information will be sold
+            or distributed to other companies without explicit permission of the
+            user.
+          </p>
+        </div>
+        <div class="terms__box">
+          <h3>External Links</h3>
+          <p>
+            Periodically, this website will provide links to external websites.
+            This website does not control the content, terms or use or privacy
+            policy of any external websites in any way. Users are advised to
+            read the terms of use and privacy policy of any external websites.
+            The owners of this website cannot guarantee or verify the contents
+            of any externally linked website despite their best efforts.<br /><br />
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="contact__info">
-      <div class="contact__info_half half-1">
-        <ul>
-          <li><i class="las la-map-marker"></i> 22 Mainstreet, NYC USA</li>
-          <li><i class="las la-envelope"></i> info@exanor.com</li>
-          <li><i class="las la-phone"></i> +1 718 3229 566</li>
-        </ul>
-      </div>
-      <div class="contact__info_half half-3">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms of Service</a></li>
-        </ul>
-      </div>
-      <div class="contact__info_half half-2">
-        <ul>
-          <li>Monday - Friday : 9am - 5pm</li>
-          <li>Saturday : 10am - 2pm</li>
-          <li>Sunday : Closed</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer">
-      <p>Designed & Developed By: <a href="#">Sarif Design</a> 2021.</p>
-    </div>
-  </div>
-</footer>
-<!-- Footer END -->
+    </section>
+    <!-- Privacy Policy END -->
 
-</body>
+    <!-- Footer -->
+    <footer>
+      <div class="footer__container">
+        <div class="visible-on-mobile">
+          <div class="visible-on-mobile-container">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact__info">
+          <div class="contact__info_half half-1">
+            <ul>
+              <li><i class="las la-map-marker"></i> 22 Mainstreet, NYC USA</li>
+              <li><i class="las la-envelope"></i> info@exanor.com</li>
+              <li><i class="las la-phone"></i> +1 718 3229 566</li>
+            </ul>
+          </div>
+          <div class="contact__info_half half-3">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="contact__info_half half-2">
+            <ul>
+              <li>Monday - Friday : 9am - 5pm</li>
+              <li>Saturday : 10am - 2pm</li>
+              <li>Sunday : Closed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer">
+          <p>Designed & Developed By: <a href="#">Sarif Design</a> 2021.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer END -->
+  </body>
 </html>
